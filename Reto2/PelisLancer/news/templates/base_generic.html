@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> {% block titulo  %} {% endblock %} | PelisLancer </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'news/css/main.css.map'%}">
+	{% block cssfile %} {% endblock %}
+<body>
+
+<h1>Inicio</h1>
+<P>Este es el inicion de la pagina de alquiler de peliculas</P>
+
+<P>{% block content %}{%endblock%}</P>
+
+</body>
+
+{% block jsfile %}{% endblock %}
+</html>
